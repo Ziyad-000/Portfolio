@@ -72,7 +72,7 @@ export default function Hero() {
               className="border-current text-current hover:bg-current/10 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
               asChild
               >
-              <a href="/Ziad-CV.pdf" download>
+              <a href="/Portfolio/Ziad-CV.pdf" download>
                 Download Resume
               </a>
             </Button>
