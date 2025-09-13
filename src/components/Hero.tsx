@@ -1,10 +1,5 @@
 import { motion } from "motion/react";
-import {
-  ArrowDown,
-  Github,
-  Linkedin,
-  Mail,
-} from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Hero() {
@@ -14,39 +9,18 @@ export default function Hero() {
       <div className="absolute inset-0">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, 50, 0],
-            y: [0, -30, 0],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          animate={{ x: [0, 50, 0], y: [0, -30, 0] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, -60, 0],
-            y: [0, 40, 0],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          animate={{ x: [0, -60, 0], y: [0, 40, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute top-1/2 left-1/2 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
 
@@ -59,9 +33,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
-            <p className="text-blue-200 text-lg md:text-xl mb-4">
-              Hello, I'm
-            </p>
+            <p className="text-blue-200 text-lg md:text-xl mb-4">Hello, I'm</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 bg-clip-text text-transparent">
               Ziyad Sayed
             </h1>
@@ -76,9 +48,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Crafting beautiful, performant mobile experiences
-            with Flutter. Passionate about clean code,
-            innovative UI/UX, and turning ideas into reality.
+            Crafting beautiful, performant mobile experiences with Flutter.
+            Passionate about clean code, innovative UI/UX, and turning ideas
+            into reality.
           </motion.p>
 
           <motion.div
@@ -93,13 +65,14 @@ export default function Hero() {
             >
               View My Work
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-blue-300 text-[rgba(116,86,150,1)] hover:bg-blue-500/20 px-8 py-3 rounded-full transition-all duration-300"
+
+            <a
+              href="/Ziad-CV.pdf"
+              download
+              className="border border-blue-300 text-[rgba(116,86,150,1)] hover:bg-blue-500/20 px-8 py-3 rounded-full transition-all duration-300 inline-block text-center"
             >
               Download Resume
-            </Button>
+            </a>
           </motion.div>
 
           <motion.div
