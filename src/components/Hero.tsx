@@ -67,9 +67,10 @@ export default function Hero() {
             </Button>
 
             <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
-              asChild
+                size="lg"
+                variant="outline"
+                className="border-current text-current hover:bg-current/10 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                asChild
               >
               <a href={`${import.meta.env.BASE_URL}Ziad-CV.pdf`} download>
                 Download Resume
