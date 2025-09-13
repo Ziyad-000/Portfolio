@@ -66,13 +66,17 @@ export default function Hero() {
               View My Work
             </Button>
 
-            <a
-              href="/Ziad-CV.pdf"
-              download
-              className="border border-blue-300 text-[rgba(116,86,150,1)] hover:bg-blue-500/20 px-8 py-3 rounded-full transition-all duration-300 inline-block text-center"
-            >
-              Download Resume
-            </a>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-current text-current hover:bg-current/10 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+              asChild
+              >
+              <a href="/Ziad-CV.pdf" download>
+                Download Resume
+              </a>
+            </Button>
+
           </motion.div>
 
           <motion.div
